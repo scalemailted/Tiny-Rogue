@@ -2,9 +2,9 @@
 A simple rogue-like game implemented in python.
 
 ASCII Legend:
-- '#': wall
-- 'O': player
-- 'X': monster
+- *'#':* wall
+- *'O':* player
+- *'X':* monster
 
 
 Dungeon Layout:
@@ -41,6 +41,7 @@ Player Movement:
 - Players cannot move into squares with a wall on it
 - Players cannot move between diagonal walls
 
+Keyboard Controls:
 - w: Move up
 - a: Move left
 - s: Move down
