@@ -42,11 +42,11 @@ The player continues to play the game until they are killed
 - Players cannot move between diagonal walls
 
 #### Keyboard Controls:
-- w: Move up
-- a: Move left
-- s: Move down
-- d: Move right
-- wa: move up-left
-- wd: move up-right
-- sa: move down-left
-- sd: move down-right
+**w:** Move up <br />
+**a:** Move left <br />
+**s:** Move down <br />
+**d:** Move right <br />
+**wa:** move up-left <br />
+**wd:** move up-right <br />
+**sa:** move down-left <br />
+**sd:** move down-right <br />
