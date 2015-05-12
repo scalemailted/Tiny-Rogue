@@ -2,7 +2,7 @@
 A simple rogue-like game implemented in python.
 
 #### ASCII Legend:
-- **'#':** wall
+- **'#':** wall <br />
 - **'O':** player
 - **'X':** monster
 
