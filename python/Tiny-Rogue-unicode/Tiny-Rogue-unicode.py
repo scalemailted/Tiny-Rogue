@@ -3,6 +3,11 @@ import sys
 import random
 import time
 
+"""UNICODES"""
+up = '\x1b[A'
+down = '\x1b[B'
+right = '\x1b[C'
+left = '\x1b[D'
 
 
 #######################################################################
@@ -68,10 +73,10 @@ class Room(object):
     #Display the state of this room
     def display(self):
         print("\033[H\033[2J")
-        sys.stdout.write('\x1b[7m \x1b[0m'*(self.col_size+2)) #Black Top Border
+        sys.stdout.write('\x1b[7m \x1b[0m'*(self.col_size+2)) #Black Border
         sys.stdout.write('\n')
         for i in xrange(self.row_size):
-            sys.stdout.write('\x1b[7m \x1b[0m') #Black Left Border
+            sys.stdout.write('\x1b[7m \x1b[0m') #Black Column
             for j in xrange(self.col_size):
                 if self.grid[i][j] == '#':
                     sys.stdout.write('\x1b[7m \x1b[0m') #GREEN
@@ -81,9 +86,9 @@ class Room(object):
                     sys.stdout.write('\x1b[1;31m'+u"\u2689"+'\x1b[0m') #RED
                 else:
                     sys.stdout.write(u"\u00b7") #OFF
-            sys.stdout.write('\x1b[7m \x1b[0m') #Black Right Border
+            sys.stdout.write('\x1b[7m \x1b[0m') #Black Column
             sys.stdout.write('\n')
-        sys.stdout.write('\x1b[7m \x1b[0m'*(self.col_size+2)) #Black Bottom Border
+        sys.stdout.write('\x1b[7m \x1b[0m'*(self.col_size+2)) #Black Border
         sys.stdout.write('\n')
     #Check if cell is in bounds and not a wall
     def is_open_cell(self,x,y):
@@ -105,14 +110,18 @@ class Room(object):
 def player_turn(room):
     global gameover
     row,col = room.player_pos
-    adjacencies = {'W':(row-1,col),\
-                   'A':(row,col-1),\
-                   'S':(row+1,col),\
-                   'D':(row,col+1),\
-                   'WA':(row-1,col-1),\
-                   'WD':(row-1,col+1),\
-                   'SA':(row+1,col-1),\
-                   'SD':(row+1,col+1)}
+    adjacencies = {up:(row-1,col),\
+                   left:(row,col-1),\
+                   down:(row+1,col),\
+                   right:(row,col+1),\
+                   up+left:(row-1,col-1),\
+                   left+up:(row-1,col-1),\
+                   up+right:(row-1,col+1),\
+                   right+up:(row-1,col+1),\
+                   down+left:(row+1,col-1),\
+                   left+down:(row+1,col-1),\
+                   down+right:(row+1,col+1),\
+                   right+down:(row+1,col+1)}
 
     user_input = raw_input().upper()
 
