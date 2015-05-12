@@ -2,12 +2,12 @@
 A simple rogue-like game implemented in python.
 
 ASCII Legend:
-'#': wall
-'O': player
-'X': monster
+- '#': wall
+- 'O': player
+- 'X': monster
 
 
-###### Dungeon Layout:
+Dungeon Layout:
 - The dungeon is on a 8x8 grid.
 - The dungeon's walls are randomly 
 
@@ -37,15 +37,15 @@ Win Condition:
 The player continues to play the game until they are killed
 
 Player Movement:
--Player can move in cardinal and ordinal directions.
--Players cannot move into squares with a wall on it
--Players cannot move between diagonal walls
+- Player can move in cardinal and ordinal directions.
+- Players cannot move into squares with a wall on it
+- Players cannot move between diagonal walls
 
-w: Move up
-a: Move left
-s: Move down
-d: Move right
-wa: move up-left
-wd: move up-right
-sa: move down-left
-sd: move down-right
+- w: Move up
+- a: Move left
+- s: Move down
+- d: Move right
+- wa: move up-left
+- wd: move up-right
+- sa: move down-left
+- sd: move down-right
