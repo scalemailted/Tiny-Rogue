@@ -7,7 +7,7 @@ ASCII Legend:
 - **'X':** monster
 
 
-Dungeon Layout:
+##### Dungeon Layout:
 - The dungeon is on a 8x8 grid.
 - The dungeon's walls are randomly 
 
