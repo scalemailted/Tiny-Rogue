@@ -16,6 +16,7 @@ A simple rogue-like game implemented in python.
 - Monsters *(X)* are spanwed in the other 3 corners of the dungeon 
 
 #### Game Turn:
+- This is a turn-based game.
 - Player moves to an adjacent tile then all monsters move toward player
 
 #### Combat:
@@ -40,6 +41,7 @@ The player continues to play the game until they are killed
 - Player can move in cardinal and ordinal directions.
 - Players cannot move into squares with a wall on it
 - Players cannot move between diagonal walls
+- Players can take null actions by just pressing *"enter"*
 
 #### Keyboard Controls:
 &nbsp;&nbsp;&nbsp;&nbsp;**w:** move up <br />
@@ -50,3 +52,4 @@ The player continues to play the game until they are killed
 &nbsp;&nbsp;&nbsp;&nbsp;**wd:** move up-right <br />
 &nbsp;&nbsp;&nbsp;&nbsp;**sa:** move down-left <br />
 &nbsp;&nbsp;&nbsp;&nbsp;**sd:** move down-right <br />
+&nbsp;&nbsp;&nbsp;&nbsp;**enter:** input command <br />
