@@ -16,7 +16,7 @@ A simple rogue-like game implemented in python.
 - Monsters *(X)* are spanwed in the other 3 corners of the dungeon 
 
 #### Game Turn:
--Player moves to an adjacent tile then all monsters move toward player
+- Player moves to an adjacent tile then all monsters move toward player
 
 #### Combat:
 - The player kills monsters by moving onto their square during their turn
@@ -26,7 +26,7 @@ A simple rogue-like game implemented in python.
 - Monsters always move toward the player using a shortest path algorithm
 - Each monster has a 20% chance of not moving during their turn
 - On every third turn the game attempts to spawn a new monster in the dungeon
-	-Random Spawning does not occur if square is already occupied.
+	+ Random Spawning does not occur if square is already occupied.
 -If the player kills all monsters, they advance to next level and monsters spawn in corners
 
 #### Scoring:
