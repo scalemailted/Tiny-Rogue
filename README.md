@@ -3,8 +3,8 @@ A simple rogue-like game implemented in python.
 
 #### ASCII Legend:
 &nbsp;&nbsp;&nbsp;&nbsp;**'#':** wall <br />
-&nbsp;&nbsp;&nbsp;&nbsp;***'O':** player <br />
-&nbsp;&nbsp;&nbsp;&nbsp;***'X':** monster <br />
+&nbsp;&nbsp;&nbsp;&nbsp;**'O':** player <br />
+&nbsp;&nbsp;&nbsp;&nbsp;**'X':** monster <br />
 
 
 #### Dungeon Layout:
@@ -42,11 +42,11 @@ The player continues to play the game until they are killed
 - Players cannot move between diagonal walls
 
 #### Keyboard Controls:
-**w:** move up <br />
-**a:** move left <br />
-**s:** move down <br />
-**d:** move right <br />
-**wa:** move up-left <br />
-**wd:** move up-right <br />
-**sa:** move down-left <br />
-**sd:** move down-right <br />
+&nbsp;&nbsp;&nbsp;&nbsp;***w:** move up <br />
+&nbsp;&nbsp;&nbsp;&nbsp;***a:** move left <br />
+&nbsp;&nbsp;&nbsp;&nbsp;***s:** move down <br />
+&nbsp;&nbsp;&nbsp;&nbsp;***d:** move right <br />
+&nbsp;&nbsp;&nbsp;&nbsp;***wa:** move up-left <br />
+&nbsp;&nbsp;&nbsp;&nbsp;***wd:** move up-right <br />
+&nbsp;&nbsp;&nbsp;&nbsp;***sa:** move down-left <br />
+&nbsp;&nbsp;&nbsp;&nbsp;***sd:** move down-right <br />
